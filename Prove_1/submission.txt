@@ -1,0 +1,36 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+1. If you did not include your source code in your I-Learn submission, please provide the URL of your public GitHub repository.
+
+https://github.com/AkivaKT/machine_learning/tree/master/Prove_1
+
+For questions 2-6, please type "True" or "False" in front of the question number.
+
+True 2. My experiment shell can correctly load the Iris dataset:
+
+True 3. My experiment shell randomizes the order of the instances (making sure to keep instances lined up with their appropriate targets) it and splits the data into a training set (70%) and a test set (30%)?
+
+True 4. I have run the GaussianNB classifier on the dataset and received results.
+
+True 5. I have created a HardCoded classifier class with two methods: fit and predict. The fit method accepts training data (including targets). The predict method returns a prediction or classification for each instance it receives.
+
+True 6. The Experiment Shell, processes the data, passes the training data to the classifier’s train method, the test data to the predict method, and then compares the predicted values against the correct answers, to produce an overall accuracy (on the test set).
+
+True 7. I have run the HardCoded classifier on the Iris dataset and obtained a result.
+
+8. What accuracy do you get when running the HardCoded classifier on the Iris dataset and why do you think that is?
+
+It varys everytime, but it is usually between 20% - 45%. My hardcoded classifier will randomly assign one of the values out of the possible outcomes. There's about the chance you get randomly.
+
+
+9. Please select the category you feel best describes your assignment:
+1 - Some attempt was made
+2 - Developing, but significantly deficient
+3 - Slightly deficient, but still mostly adequate
+4 - Meets requirements
+5 V Shows creativity and excels above and beyond requirements
+
+10. Provide a brief justification (1-2 sentences) for selecting that category: 
+I tried to use pandas package to wrangle the data in a tidier way, and found out some limitations of the sk-learn package. It seems like the fit function of the GaussianNB class doesn't like the dependent variable (outcomes) to be stored in
+ a data.frame format but only an arrey while it will take the explanatory variables in a data.frame format. I loaded another dataset in csv.format as well; in that dataset, I have the information of the milleges and prices of two types of car: 
+Civics and Corolla, I applied the training modeling to see if I can predict the model of the a car (Civic or Corolla) with its millege and price, I got a 80% accuracy at the end.
