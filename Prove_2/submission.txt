@@ -1,0 +1,35 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+1. If you did not include your source code in your I-Learn submission, please provide the URL of your public GitHub repository.
+https://github.com/AkivaKT/machine_learning/tree/master/Prove_2
+
+2. Briefly describe your overall approach to the task and highlight the most difficult part of this assignment.
+I first built the Knn classifier using the pandas library, I did not implentment any standardisation of data in 
+my approach, I simplyly found the distance between points using a for loop within a for loop. applying the 
+value_counts function, I am able to find the most common class within k neighbor. The toughest part of the assignment
+has to be the predict function of the algorithm, to find the most common class.
+
+3. Describe your results for the Iris data set. (For example, what level of accuracy did you see for different values of K?)
+I tried different value of K with the hard-coded KNN classifier, and found there isn't much different, I was able to
+get over 95% of accuracy from 3 to 8. However, the amount of time it takes increases as I increase the value of K.
+
+4. How did your implementation compare to the existing implementation?
+Given the some seed , same data, and the same value of K, the two implementation have very close accuracy,
+the main difference is the time they take to finish predicting. The existing implementation is definitly faster
+than mine, once the value of K reaches 4 or 5, the time difference becomes very noticable.
+
+5. Describe anything you did to go above and beyond the minimum standard requirements.
+I combine the asssignment I did last week and made a simple UI for users to select what algorithm, dataset, 
+train-test ratio,and seed they wish to use. Again, I used another dataset for that assignments.  
+
+6. Please select the category you feel best describes your assignment:
+1 - Some attempt was made
+2 - Developing, but significantly deficient
+3 - Slightly deficient, but still mostly adequate
+4 - Meets requirements
+V 5 - Shows creativity and excels above and beyond requirements
+
+
+7. Provide a brief justification (1-2 sentences) for selecting that category.
+Instead of just testing for my implementation of Knn, I created an ui for users to put differnet settings. I used
+an extra dataset, within that data, there is non-numeric data for the dependent variable.
