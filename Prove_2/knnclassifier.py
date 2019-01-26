@@ -35,6 +35,7 @@ class KnnClassifier():
                 result = knn['Target'].value_counts().index[0]
                 self.prediction = self.prediction.append({'class': result}, 
                                                          ignore_index = True)
+        self.prediction['class'] = self.prediction['class']
         
     def score(self,ex_test,de_test):
         self.predict(ex_test)

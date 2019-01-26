@@ -17,7 +17,7 @@ iris_target = pd.DataFrame(iris.target)
 
 
 # Step 2
-## in as in independent variable, de as in dependent variable
+## in as for explanatory variable, de as in dependent variable
 in_train, in_test, de_train, de_test = train_test_split(iris_data, iris_target, test_size = .3, random_state = 98)
 
 de_train = np.ravel(de_train)
