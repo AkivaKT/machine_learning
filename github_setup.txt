@@ -1,0 +1,87 @@
+Microsoft Windows [Version 10.0.17763.253]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\WINDOWS\system32>cd machine_learning
+The system cannot find the path specified.
+
+C:\WINDOWS\system32>cd ..
+
+C:\Windows>cd ..
+
+C:\>cd users
+
+C:\Users>cd keith/documents/
+
+C:\Users\keith\Documents>git clone https://github.com/AkivaKT/machine_learning.git
+fatal: destination path 'machine_learning' already exists and is not an empty directory.
+
+C:\Users\keith\Documents>git clone https://github.com/AkivaKT/machine_learning.git
+Cloning into 'machine_learning'...
+remote: Enumerating objects: 38, done.
+remote: Counting objects: 100% (38/38), done.
+remote: Compressing objects: 100% (36/36), done.
+remote: Total 38 (delta 8), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (38/38), done.
+
+C:\Users\keith\Documents>cd machine_learning
+
+C:\Users\keith\Documents\machine_learning>git remote -v
+origin  https://github.com/AkivaKT/machine_learning.git (fetch)
+origin  https://github.com/AkivaKT/machine_learning.git (push)
+
+C:\Users\keith\Documents\machine_learning>git remote add github https://github.com/AkivaKT/machine_learning.git
+
+C:\Users\keith\Documents\machine_learning>git remote -v
+github  https://github.com/AkivaKT/machine_learning.git (fetch)
+github  https://github.com/AkivaKT/machine_learning.git (push)
+origin  https://github.com/AkivaKT/machine_learning.git (fetch)
+origin  https://github.com/AkivaKT/machine_learning.git (push)
+
+C:\Users\keith\Documents\machine_learning>git add *
+warning: LF will be replaced by CRLF in Prove_3/student-mat.csv.
+The file will have its original line endings in your working directory
+
+C:\Users\keith\Documents\machine_learning>get status
+'get' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\keith\Documents\machine_learning>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Prove_1/__pycache__/randomclassifier.cpython-36.pyc
+        modified:   Prove_1/main.py
+        modified:   Prove_1/randomclassifier.py
+        modified:   Prove_2/knnclassifier.py
+        new file:   Prove_2/main
+        new file:   Prove_3/__pycache__/knnclassifier.cpython-36.pyc
+        new file:   Prove_3/knnclassifier.py
+        new file:   Prove_3/main.py
+        new file:   Prove_3/student-mat.csv
+
+
+C:\Users\keith\Documents\machine_learning>git commit -m "new push"
+[master 1f79ce7] new push
+ 9 files changed, 593 insertions(+), 2 deletions(-)
+ create mode 100644 Prove_2/main
+ create mode 100644 Prove_3/__pycache__/knnclassifier.cpython-36.pyc
+ create mode 100644 Prove_3/knnclassifier.py
+ create mode 100644 Prove_3/main.py
+ create mode 100644 Prove_3/student-mat.csv
+
+C:\Users\keith\Documents\machine_learning>git push github master -u
+Enumerating objects: 22, done.
+Counting objects: 100% (22/22), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 10.74 KiB | 610.00 KiB/s, done.
+Total 15 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 4 local objects.
+To https://github.com/AkivaKT/machine_learning.git
+   7b9cd14..1f79ce7  master -> master
+Branch 'master' set up to track remote branch 'master' from 'github'.
+
+C:\Users\keith\Documents\machine_learning>
