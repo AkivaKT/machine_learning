@@ -131,7 +131,7 @@ for i in range(3,9):
         bestScore = al
         bestK = i
 print('Best perfornance:\nK:{}\nscore: {}'.format(bestK, bestScore))    
-
+'''
 
 # dataset2
 print('Auto data set\nMissing data:')
@@ -260,7 +260,7 @@ student.replace(converting, inplace = True)
 target  = np.asarray(student['G3'])
 data    = student.iloc[:,0:32]
 
-ex_train, ex_test, de_train, de_test = train_test_split(data_long, target,
+ex_train, ex_test, de_train, de_test = train_test_split(data, target,
                                       test_size = .3, 
                                       random_state = 488787,
                                       shuffle = True)
@@ -335,3 +335,4 @@ for i in range(3,9):
     
 
 print('Best perfornance:\nK:{}\nscore: {}'.format(bestK, bestScore))    
+'''

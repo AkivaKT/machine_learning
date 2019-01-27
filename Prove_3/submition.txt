@@ -1,0 +1,171 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+1. If you did not include your source code in your I-Learn submission, please provide the URL of your public GitHub repository.
+
+https://github.com/AkivaKT/machine_learning/blob/master/Prove_3/main.py
+
+2. What was the most difficult part of this assignment?
+
+the most difficult part of the assignment is the handling of the non-numeric data, although I understand the concept of converting 
+data, it was still hard to convert the data the way I wanted with pandas.
+
+3. Briefly describe your process for handling non-numeric data.
+
+I used find and replace, label encoding and one hot encoding in my data sets.
+except for one hot encoding, I utilised a dictionary within a dictionary for the encoding and replacing. With the replace function
+for dataframe, I was able to replacethe value with numeric data.
+as for one hot encoding, the get_dummies function in the pandas library was very useful, only does it produce the columns, it 
+also removes the old columns.
+
+4. Briefly describe your process for missing data.
+
+out of the 3 data sets, only the auto data has missing value, and since the missing values were only in 8 rows, I
+used the dropna() function to get rid of them(listwise). 
+
+
+5. Describe your results for the Car Evaluation dataset.
+I handled the data two ways,label encoding and one hot encoding 
+Label encoding has the best performance with score: 0.9248554913294798 when k = 3
+for both of the encoding, the score starts to go down once k increases.
+label encoding
+result:
+when k = 3:
+score: 0.9248554913294798
+when k = 4:
+score: 0.9113680154142582
+when k = 5:
+score: 0.884393063583815
+when k = 6:
+score: 0.8535645472061657
+when k = 7:
+score: 0.8323699421965318
+when k = 8:
+score: 0.8400770712909441
+Best perfornance:
+K:3
+score: 0.9248554913294798
+
+one hot encoding
+result:
+when k = 3:
+score: 0.8304431599229287
+when k = 4:
+score: 0.8034682080924855
+when k = 5:
+score: 0.8053949903660886
+when k = 6:
+score: 0.791907514450867
+when k = 7:
+score: 0.7957610789980732
+when k = 8:
+score: 0.7726396917148363
+Best perfornance:
+K:3
+score: 0.8304431599229287
+
+
+6. Describe your results for the Automobile MPG  dataset.
+All the columns in this data set is numeric, so I handled the missing data and then ran test with it.
+the best performance is with score 0.8045343545826161 when k = 5
+K = 5 is the sweet spot of the model, k lower or higher than 5 would cause a lower score.
+result:
+when k = 3:
+score: 0.8097675794405843
+when k = 4:
+score: 0.8112482261648744
+when k = 5:
+score: 0.8138888488569884
+when k = 6:
+score: 0.8061136044469518
+when k = 7:
+score: 0.8045343545826161
+when k = 8:
+score: 0.7955762176492678
+Best perfornance:
+K:5
+score: 0.8138888488569884
+
+7. Describe your results for the Student Performance dataset.
+I handled the non-numeric data three ways, one hot encoding, label encoding, and both on my last one.
+it seems like test2 (label encoding)gave us the best result.
+The best performance was 0.5597543271915131 with k = 5.
+One hot encoding had the worse performance with a 0.2944847695266456 score when k =3
+this model was not very effective in predict the target, the best performance bearly beat a randomly guess,
+and might not be better than a sophisticated guess.
+
+test 1 on student data (one hot encoding)
+there is 58 columns after one hot encoding.
+
+result:
+when k = 3:
+score: 0.2944847695266456
+when k = 4:
+score: 0.31350851479620334
+when k = 5:
+score: 0.37283752093802347
+when k = 6:
+score: 0.39612569017929167
+when k = 7:
+score: 0.4018824280130814
+when k = 8:
+score: 0.4016192071468454
+Best perfornance:
+K:7
+score: 0.4018824280130814
+
+test 2 on student data (label encoding)
+
+result:
+when k = 3:
+score: 0.5160493827160495
+when k = 4:
+score: 0.530426437744277
+when k = 5:
+score: 0.5597543271915131
+when k = 6:
+score: 0.5468282771884114
+when k = 7:
+score: 0.5389806173725772
+when k = 8:
+score: 0.5570465173087661
+Best perfornance:
+K:5
+score: 0.5597543271915131
+
+test 3 on student data (both label encoding and one hot encoding(custom))
+
+result:
+when k = 3:
+score: 0.32067125752217884
+when k = 4:
+score: 0.42230946398659974
+when k = 5:
+score: 0.46290340591848145
+when k = 6:
+score: 0.4861281717228117
+when k = 7:
+score: 0.47281646326872473
+when k = 8:
+score: 0.49686278615298723
+Best perfornance:
+K:8
+score: 0.49686278615298723
+
+8. Describe anything you did to go above and beyond the minimum standard requirements.
+I tried different k on every data set to find the best performing setting. I also applied different ways to convert and handle the 
+non-numeric data.
+
+9. Please select the category you feel best describes your assignment:
+1 - Some attempt was made
+2 - Developing, but significantly deficient
+3 - Slightly deficient, but still mostly adequate
+4 - Meets requirements
+V5 - Shows creativity and excels above and beyond requirements
+
+
+10. Provide a brief justification (1-2 sentences) for selecting that category.
+I met all the requirements, I loaded in the data, handled both the missing values and non-numeric data, did preprocessing to all
+the datasets, and performed a basic experimentation. Above that, I tried different ways of handling non-numeric data to see which
+encoding would give the best result.
+
+
