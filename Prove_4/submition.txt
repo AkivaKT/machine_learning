@@ -2,25 +2,37 @@ When your assignment is complete, please answer the questions in this text file 
 
 
 1. Please provide a link to your classifier in your public GitHub repo.
-
+https://github.com/AkivaKT/machine_learning/tree/master/Prove_4
 
 2. Briefly describe your overall approach to the task and highlight the most difficult part of this assignment.
-
+I was able to implement my own tree classifier and was created the functions to build a tree structure using class and dictionary
+My tree classifier has the function to evaluate and compare the accuracy of the model. The most difficult part of the assignment
+was to create the recursive function in build and predict. 
 
 3. Describe the dataset that you used.
+I used the iris data to compare my own classifier to the sklearn tree classifier. I also went above and beyond by using two extra 
+datasets that involve conversions of data that deals with numeric data and discrete data.
 
-
-4. Describe your results on this dataset. (e.g., What was the size of the tree? How did your implementation compare to existing implementations? How did your decision tree compare to your kNN classifier)
-
+4. Describe your results on this dataset. (e.g., What was the size of the tree? How did your implementation compare to existing implementations?
+How did your decision tree compare to your kNN classifier)
+I found out the sklearn package doesn't decide which feature to break by the biggest information gain but by looking at the lowest entropy(not average entropy). That helps to ensure the tree will cover the most obvious value in one feature first.
+My tree classifier will pick on the feature that gives me the most information gain. Compare with the sklearn classifier, my classifier has an accuracy that is a bit lower, but overall, my classifier will always produce the more balanced and smaller tree structure.  
 
 5. If applicable, please describe anything you did to go above and beyond and the results you saw.
-
+I applied different datasets that were required in the experimental approach, I tried different ways to deals with the discrete data to see if it would
+improve my accuracy. I found out that although some variables may seem related(the file and rank of white king in the chess dataset) and feel like
+they should be in a combined column, decision tree works best with more related columns than fewer independent columns. I got an accuracy of 47% for
+the same dataset with more related columns and a 25% accuracy with fewer independent columns. The sklearn tree classifier also has a 51% of accuracy.
+Besides that, I created a trim function for my class to trim down leaf nodes that are useless. See the main function for the differences between
+the tree before trim and after the trim.
 
 6. Please select the category you feel best describes your assignment:
 1 - Some attempt was made
 2 - Developing, but significantly deficient
 3 - Slightly deficient, but still mostly adequate
 4 - Meets requirements
-5 - Shows creativity and excels above and beyond requirements
+V5 - Shows creativity and excels above and beyond requirements
 
 7. Provide a brief justification (1-2 sentences) for selecting that category.
+I finished the implementation approach while also done part of the experimental requirements. I created a trim function to improve the efficiency of
+my classifier
