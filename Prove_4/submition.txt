@@ -1,0 +1,26 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+
+1. Please provide a link to your classifier in your public GitHub repo.
+
+
+2. Briefly describe your overall approach to the task and highlight the most difficult part of this assignment.
+
+
+3. Describe the dataset that you used.
+
+
+4. Describe your results on this dataset. (e.g., What was the size of the tree? How did your implementation compare to existing implementations? How did your decision tree compare to your kNN classifier)
+
+
+5. If applicable, please describe anything you did to go above and beyond and the results you saw.
+
+
+6. Please select the category you feel best describes your assignment:
+1 - Some attempt was made
+2 - Developing, but significantly deficient
+3 - Slightly deficient, but still mostly adequate
+4 - Meets requirements
+5 - Shows creativity and excels above and beyond requirements
+
+7. Provide a brief justification (1-2 sentences) for selecting that category.
