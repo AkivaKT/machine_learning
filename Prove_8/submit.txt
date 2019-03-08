@@ -1,0 +1,26 @@
+When your assignment is complete, please answer the questions in this text file and upload it to I-Learn.
+
+
+1. Please describe your experiment/results for the Vowel dataset. How many different parameters did you try? What was the highest accuracy you obtained, and what were the parameters that produced it?
+
+I tried 12 differnt combinations of parameters, utilising all 4 kernals functions. The highest accuracy was 0.9959514 with gamma = 0.1, cost = 5, radial Kernal function.
+the dataset reponded poorly to sigmoid function, lowest accuracy reaching 0.1214575.
+
+2. Please describe your experiment/results for the Letters dataset. How many different parameters did you try? What was the highest accuracy you obtained, and what were the parameters that produced it?
+
+
+I tried 12 differnt combinations of parameters, also utilising all 4 kernals functions. The highest accuracy was 0.9736 with gamma = 0.1, cost = 5, radial Kernal function.
+it seems like this setting works the best for both datasets.
+the dataset also reponded poorly to sigmoid function, lowest accuracy reaching 0.3318
+
+
+3. Describe anything you did to go above and beyond the minimum standard requirements.
+
+I built a function that will take the dataset and according to the parameters I pass in, it will split the data and retrun the accuracy of the test data.
+
+4. Please select the category you feel best describes your assignment:
+E - Shows creativity and excels above and beyond requirements
+
+
+5. Provide a brief justification (1-2 sentences) for selecting that category.
+I met all the requirements and simplified the steps for testing different parameters, I also did moire than 10 combination of testing for each data set.

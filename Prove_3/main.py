@@ -131,7 +131,7 @@ for i in range(3,9):
         bestScore = al
         bestK = i
 print('Best perfornance:\nK:{}\nscore: {}'.format(bestK, bestScore))    
-'''
+
 
 # dataset2
 print('Auto data set\nMissing data:')
@@ -335,4 +335,3 @@ for i in range(3,9):
     
 
 print('Best perfornance:\nK:{}\nscore: {}'.format(bestK, bestScore))    
-'''
